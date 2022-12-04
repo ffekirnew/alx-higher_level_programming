@@ -7,3 +7,4 @@ def no_c(my_string):
         if char == 'c' or char == 'C':
             continue
         copy += char
+    return copy
