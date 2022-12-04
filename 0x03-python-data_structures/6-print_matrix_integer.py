@@ -2,11 +2,11 @@
 
 
 def print_matrix_integer(matrix=[[]]):
-    rows = len(matrix)
-    if not rows:
+    rs = len(matrix)
+    if not rs:
         return None
-    columns = len(matrix[0])
-    for row in range(rows):
-        for column in range(columns):
-            print("{:d}".format(matrix[row][column]), end="" if column == columns - 1 else " ")
+    cs = len(matrix[0])
+    for r in range(rs):
+        for c in range(cs):
+            print("{:d}".format(matrix[r][c]), end="" if c == cs - 1 else " ")
         print()
