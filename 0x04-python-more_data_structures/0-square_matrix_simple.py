@@ -6,7 +6,5 @@ def square_matrix_simple(matrix=[]):
         return None
     answer = []
     for i in range(len(matrix)):
-        answer.append([])
-        for j in range(len(matrix[i])):
-            answer[-1].append(matrix[i][j])
+        answer.append(list(map(lambda x: x ** 2, matrix[i])))
     return answer
