@@ -1,11 +1,32 @@
 #!/usr/bin/python3
-"""Module contains function to divide a matrix by a number
-"""
+"""Module contains function to divide a matrix by a number."""
 
 
 def matrix_divided(matrix, div):
-    '''Divides all elements of the matrix by div
-    '''
+    """Divide all elements of a matrix.
+
+    Parameters
+    ----------
+    matrix : list[list]
+        The matrix to be divided
+    div : number
+        The number to divide the matrix with
+
+    Returns
+    -------
+    list[list]
+        The matrix after all elements have been divided.
+
+    Raises
+    ------
+    TypeError
+        If div is not a number
+    ZeroDivisionError
+        If div is zero
+    TypeError
+        If matrix is not list of lists or rows are not of the same size
+
+    """
     # define error strings
     list_of_lists = 'matrix must be a matrix'
     + ' (list of lists) of integers/floats'
