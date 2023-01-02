@@ -5,6 +5,7 @@
 class Rectangle:
     """Class that defines a rectangle by width and height."""
     number_of_instances = 0
+    print_symbol = '#'
 
     def __init__(self, width=0, height=0):
         """Instantiate with optional width and height."""
@@ -60,7 +61,7 @@ class Rectangle:
         if (self.area() != 0):
             for i in range(0, self.__height):
                 for j in range(0, self.__width):
-                    string += "#"
+                    string += Rectangle.print_symbol
                 string += "\n"
             return string
         else:
