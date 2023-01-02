@@ -10,7 +10,7 @@ class Rectangle:
         """Instantiate with optional width and height."""
         self.width = width
         self.height = height
-        number_of_instances += 1
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -75,5 +75,5 @@ class Rectangle:
     def __del__(self):
         """Execute when a del keyword is called upon an instance."""
         print("Bye rectangle...")
-        number_of_instances -= 1
+        Rectangle.number_of_instances -= 1
         return None
