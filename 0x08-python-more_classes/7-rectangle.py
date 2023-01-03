@@ -57,13 +57,13 @@ class Rectangle:
 
     def __str__(self):
         """Return string representation of the object."""
-        string = ""
+        string = []
         if (self.area() != 0):
             for i in range(0, self.__height):
                 for j in range(0, self.__width):
-                    string += Rectangle.print_symbol
+                    string.append("{}".format(Rectangle.print_symbol))
                 string += "\n"
-            return string
+            return "".join(string)
         else:
             return ""
 

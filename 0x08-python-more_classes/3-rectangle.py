@@ -53,12 +53,13 @@ class Rectangle:
         return 0
 
     def __str__(self):
-        """Return informal string representation of the rectangle."""
-        if self.__height and self.__width:
-            string = []
-            for row in range(self.__height):
-                for col in range(self.__width):
-                    string.append("#")
-                string.append("\n")
-            return "".join(string)
-        return ""
+        """Return string representation of the object."""
+        string = ""
+        if (self.area() != 0):
+            for i in range(0, self.__height):
+                for j in range(0, self.__width):
+                    string += "#"
+                string += "\n"
+            return string
+        else:
+            return ""
