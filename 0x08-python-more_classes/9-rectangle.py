@@ -68,7 +68,7 @@ class Rectangle:
 
     def square(cls, size=0):
         """Retrun a rectangle of size width == height == size"""
-        return Rectangle(size, size)
+        return Rectangle(cls, cls)
 
     def __str__(self):
         """Return string representation of the object."""
