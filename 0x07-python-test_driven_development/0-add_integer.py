@@ -4,7 +4,7 @@
 
 def add_integer(a, b=98):
     """Add two integers.
-    
+
     Parameters
     ----------
     a : any
@@ -16,7 +16,7 @@ def add_integer(a, b=98):
     -------
     int
         the sum of the two arguments
-    
+
     Raises
     ------
     TypeError
