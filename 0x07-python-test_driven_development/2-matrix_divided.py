@@ -28,8 +28,7 @@ def matrix_divided(matrix, div):
 
     """
     # define error strings
-    list_of_lists = 'matrix must be a matrix'
-    + ' (list of lists) of integers/floats'
+    list_of_lists = 'matrix must be a matrix' + ' (list of lists) of integers/floats'
     division_by_zero = 'division by zero'
     div_must_be_num = 'div must be a number'
     same_size_rows = 'Each row of the matrix must have the same size'
