@@ -1,0 +1,11 @@
+>>> a = MyList()
+>>> a.append(1)
+>>> a.append(2)
+>>> a.append(100)
+>>> a
+[1, 2, 100]
+>>> a.append(3)
+>>> a
+[1, 2, 100, 3]
+>>> a.print_sorted()
+[1, 2, 3, 100]
