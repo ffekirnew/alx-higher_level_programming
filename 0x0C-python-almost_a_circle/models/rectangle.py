@@ -93,15 +93,25 @@ class Rectangle(Base):
             self.id = id
         else:
             if "id" in kwargs:
-                self.id = id
+                self.id = kwargs["id"]
             if "width" in kwargs:
-                self.__width = width
+                self.__width = kwargs["width"]
             if "height" in kwargs:
-                self.__height = height
+                self.__height = kwargs["height"]
             if "x" in kwargs:
-                self.__x = x
+                self.__x = kwargs["x"]
             if "y" in kwargs:
-                self.__y = y
+                self.__y = kwargs["y"]
+
+    def to_dictionary(self):
+        """Return dictionary representaion of the Rectangle."""
+        return {
+            "id": self.id,
+            "width": self.width,
+            "height": self.height,
+            "x": self.x,
+            "y": self.y
+        }
 
     def __str__(self):
         return f"[Rectangle] (<{self.id}>) <{self.__x}>/<{self.__y}> - <{self.__width}>/<{self.__height}>"
